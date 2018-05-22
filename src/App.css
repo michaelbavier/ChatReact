@@ -1,0 +1,38 @@
+
+.App{
+max-width: 600px;
+margin-right: auto;
+margin-left: auto;
+}
+
+
+.container{
+  height: 400px;
+  overflow: hidden;
+  margin-bottom: 50px;
+  text-align: center;
+  border: 1px blue solid;
+}
+
+.containerTwo{
+  height: 500px;
+  border: 1px solid black;
+}
+
+.motion{
+  overflow: hidden;
+  border: 1px red solid;
+  margin-bottom: 50px;
+}
+
+.changeCouleur{
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: space-around;
+  border: 1px green solid;
+}
+
+
+.containerAnimation{
+  border: 1px black solid;
+}

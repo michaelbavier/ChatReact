@@ -1,0 +1,101 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.global{
+  display: flex;
+}
+
+.maincontainer{
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.maincontainers{
+  flex: 1;
+}
+
+
+
+.users{
+height: 50px;
+
+}
+
+.contact{
+  height: 320px;
+  width: 200px;
+  background-color: #86aecc;
+}
+
+.utilisateurs{
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  background-color: #bce0ee;
+}
+
+
+img{
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+
+
+.status{
+  position: relative;
+  width: 15px;
+  height: 15px;
+  top: -10px;
+  left: 30px;
+  border-radius: 50%;
+}
+
+.bull{
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+
+.heure{
+  display: flex;
+  justify-content: center;
+}
+
+.box{
+  position: fixed;
+  bottom: 0;
+  width: 800px;
+  background-color:#86aecc;
+}
+
+input{
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border-radius: 15px;
+  height: 30px;
+  width: 320px;
+  border: 1px #ddd solid;
+}
+
+button{
+  margin-top: 15px;
+  border-radius: 50%;
+  margin-left: 15px;
+  height: 30px;
+  width: 30px;
+  background-color: black;
+  color: white;
+  border: 1px black solid;
+}
+
+form{
+  display: flex;
+  justify-content: center;
+}
