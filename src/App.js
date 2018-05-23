@@ -1,18 +1,36 @@
-// import React, { Component } from 'react';
-// import logo from './logo.svg';
-// import './App.css';
-// import { VelocityComponent } from 'velocity-react';
-// import { TimelineLite } from 'gsap';
-// import { Motion, spring } from 'react-motion';
-// import ioClient from 'socket.io-client';
+import ioClient from 'socket.io-client';
+
+const  socket = ioClient('http://localhost:3002');
+
+console.log(socket);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 // // CONNEXION AU SERVEUR AVEC UN CLIENT
 
 
-// const io = require('socket.io-client')
 
-// const socket = io.connect('http//localhost:3000')
 
 // function registerHandler(oneMessageReceveid) {
 //     socket.io('message' , oneMessageReceveid)

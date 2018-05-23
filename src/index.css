@@ -1,15 +1,27 @@
+html{
+  height: 100%;
+}
+
 body {
   margin: 0;
   padding: 0;
+  height: 100%;
+  color: white;
   font-family: sans-serif;
 }
 
+
+#root{
+  height: 93%;
+}
+
 .global{
+  height: 100%;
   display: flex;
 }
 
 .maincontainer{
-  width: 800px;
+  height: 100%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -18,30 +30,34 @@ body {
   flex: 1;
 }
 
-
-
 .users{
-height: 50px;
+height: 40px;
 
 }
 
+.connecter{
+  text-align: center;
+}
+
+.déconnecter{
+}
+
 .contact{
-  height: 320px;
   width: 200px;
-  background-color: #86aecc;
+  background-color: #BE0E4B;
 }
 
 .utilisateurs{
   display: flex;
   align-items: center;
   padding: 20px;
-  background-color: #bce0ee;
+  background-color: #DE1F30;
 }
 
 
 img{
-  height: 50px;
-  width: 50px;
+  height: 40px;
+  width: 40px;
   border-radius: 50%;
 }
 
@@ -60,19 +76,25 @@ img{
   padding-right: 15px;
   padding-top: 5px;
   padding-bottom: 5px;
+  background-color: #E3515E;
+}
+
+.pseudo{
+  width: 150px;
+  text-align: center;
 }
 
 
 .heure{
   display: flex;
   justify-content: center;
+  color:black;
 }
 
 .box{
-  position: fixed;
+  /* position: fixed; */
   bottom: 0;
-  width: 800px;
-  background-color:#86aecc;
+  background-color:#BE0E4B;
 }
 
 input{
@@ -80,7 +102,7 @@ input{
   margin-bottom: 15px;
   border-radius: 15px;
   height: 30px;
-  width: 320px;
+  width: 500px;
   border: 1px #ddd solid;
 }
 
@@ -96,6 +118,8 @@ button{
 }
 
 form{
+  width: 600px;
+  margin-left: auto;
   display: flex;
   justify-content: center;
 }

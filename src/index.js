@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import './App';
 import registerServiceWorker from './registerServiceWorker';
 import photo from './michael.jpg';
 
@@ -23,7 +23,7 @@ function Container (){
 
 
 function Contact (){
-    return <div className="contact"></div>
+    return <div className="contact"><div className="connecter"> <p> {"Michaël Bavier"}</p> </div> <div className="déconnecter"> </div></div>
 }
 
 
