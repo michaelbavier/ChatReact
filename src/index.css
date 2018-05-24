@@ -6,7 +6,7 @@ body {
   margin: 0;
   padding: 0;
   height: 100%;
-  color: white;
+  /* color: white; */
   font-family: sans-serif;
 }
 
@@ -26,7 +26,7 @@ body {
   margin-right: auto;
 }
 
-.maincontainers{
+.messageList{
   flex: 1;
 }
 
@@ -40,6 +40,7 @@ height: 40px;
 }
 
 .déconnecter{
+  text-align: center;
 }
 
 .contact{
@@ -47,7 +48,7 @@ height: 40px;
   background-color: #BE0E4B;
 }
 
-.utilisateurs{
+.utilisateur{
   display: flex;
   align-items: center;
   padding: 20px;
@@ -69,9 +70,10 @@ img{
   top: -10px;
   left: 30px;
   border-radius: 50%;
+  border: 1px black solid;
 }
 
-.bull{
+.messageBubble{
   padding-left: 15px;
   padding-right: 15px;
   padding-top: 5px;

@@ -1,8 +1,19 @@
 import ioClient from 'socket.io-client';
+import React from 'react';
 
 const  socket = ioClient('http://localhost:3002');
 
+
 console.log(socket);
+
+socket.on ('new_by_server', function(data) {
+    console.log(data);
+
+    socket.emit('hello','hey');
+
+    
+});
+ 
 
 
 
@@ -160,6 +171,3 @@ console.log(socket);
 // chatroomManager.removeClient(client)
 
 // }
-
-
-

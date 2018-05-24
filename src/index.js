@@ -5,57 +5,110 @@ import './App';
 import registerServiceWorker from './registerServiceWorker';
 import photo from './michael.jpg';
 
-ReactDOM.render(<MainContainer/>, document.getElementById ('root'));
 
 
-function MainContainer (){
-    return <div className="maincontainer"> <Global/> <Box/></div>
+
+class App extends React.Component {
+    render(){
+        return (
+            <div className="maincontainer">
+                <div className="global">
+                    <Contacts name="Michaël"/>
+                    <div className="messageList">
+                       <Message/>
+                       <Message/>
+                    </div>
+                </div>
+                <Box/>
+            </div>
+        )
+    }
 }
 
-function Global (){
-    return <div className="global"> <Contact/> <div className="maincontainers"> <Container/> <Heure/> <Container/> <Heure/> </div> </div>
+function Message (props){
+    return (
+        <div>
+            {props.name}
+            <Container/>
+            <Heure/>
+        </div>
+        )
 }
-
 
 function Container (){
-    return <div className="container"> <Utilisateurs/> <Bull/> </div> 
+    return (
+    <div className="container">
+        <Utilisateur name="Michaël Bavier"/>
+        <MessageBubble name="Bonjour a tous"/>
+    </div>
+    ) 
 }
 
 
-function Contact (){
-    return <div className="contact"><div className="connecter"> <p> {"Michaël Bavier"}</p> </div> <div className="déconnecter"> </div></div>
+function Contacts (props){
+    return (
+
+     <div className="contact">
+        <div className="connecter">
+            <p>
+            {props.name}
+            </p>
+        </div>
+            <div className="déconnecter">
+            </div>
+    </div>
+    )
 }
 
 
-function Utilisateurs (){
-    return <div className="utilisateurs"> <User/> <Pseudo/> </div> 
+function Utilisateur (props){
+    return (
+        <div className="utilisateur"> 
+            <div className="users">
+                <img src={photo}/>
+                <div className="status"> 
+                </div> 
+            </div>
+            <div className="pseudo">
+                <p>
+                {props.name}
+                </p>
+            </div>
+        </div>
+    )
+ }
+
+
+function MessageBubble (props){
+    return (
+    <div className="messageBubble">
+        <p>
+            {props.name}
+        </p>
+    </div>
+    )
 }
 
-function Pseudo (){
-    return <div className="pseudo">{"Michaël Bavier"} </div>
+function Heure (props){
+    return (
+    <div className="heure">
+        <p>
+            {props.name}
+        </p>
+    </div>)
+
 }
 
-function User (){
-    return <div className="users"> <img src={photo}/><div className="status"> </div> </div>
-}
-
-
-
-
-
-//OK
-function Bull (){
-    return <div className="bull"> <p> {"Hello"}</p> </div>
-}
-
-//OK
-function Heure (){
-    return <div className="heure"> <p>{ "17h59"}</p></div>
-}
-
-//OK
 function Box(){
-    return <div className="box"> <form> <input type ="texte"/> <button> x </button> </form> </div>
+    return (
+    <div className="box">
+        <form className="form">
+            <input type ="texte" name="texte"/>
+            <input type="submit"/>
+        </form>
+    </div>
+    )
 }
 
+ReactDOM.render(<App/>, document.getElementById ('root'));
 
