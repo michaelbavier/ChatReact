@@ -28,37 +28,24 @@ class App extends React.Component {
 function Message (props){
     return (
         <div>
-            {props.name}
-            <Container/>
-            <Heure/>
+            {props.name},
+            <Container utilisateur="Michël"/>
+            <Heure heure="17h30"/>
         </div>
         )
 }
 
-function Container (){
+function Container (props){
     return (
     <div className="container">
-        <Utilisateur name="Michaël Bavier"/>
-        <MessageBubble name="Bonjour a tous"/>
+    {props.utilisateur}
+    
+        <Utilisateur utilisateur="Michaël" />
+        <MessageBubble />
     </div>
     ) 
 }
 
-
-function Contacts (props){
-    return (
-
-     <div className="contact">
-        <div className="connecter">
-            <p>
-            {props.name}
-            </p>
-        </div>
-            <div className="déconnecter">
-            </div>
-    </div>
-    )
-}
 
 
 function Utilisateur (props){
@@ -71,7 +58,8 @@ function Utilisateur (props){
             </div>
             <div className="pseudo">
                 <p>
-                {props.name}
+                    props.utilisateur
+                    {props.utilisateur}
                 </p>
             </div>
         </div>
@@ -79,11 +67,26 @@ function Utilisateur (props){
  }
 
 
-function MessageBubble (props){
+function Contacts (){
+    return (
+
+     <div className="contact">
+        <div className="connecter">
+            <p>
+            </p>
+        </div>
+            <div className="déconnecter">
+            </div>
+    </div>
+    )
+}
+
+
+
+function MessageBubble (){
     return (
     <div className="messageBubble">
         <p>
-            {props.name}
         </p>
     </div>
     )
@@ -92,9 +95,9 @@ function MessageBubble (props){
 function Heure (props){
     return (
     <div className="heure">
-        <p>
-            {props.name}
-        </p>
+    <p>
+        {props.heure}
+    </p>
     </div>)
 
 }
@@ -112,3 +115,70 @@ function Box(){
 
 ReactDOM.render(<App/>, document.getElementById ('root'));
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+hello();
+
+
+
+
+const myAge = 10;
+
+printMyAge();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+main();
+
+function main() {
+    printPretty();
+}
+
+function printPretty() {
+    console.log('=====================');
+
+    printUser('Michael');
+
+    printHeure('10h30');
+    console.log('=====================');
+} 
+
+function printHeure(heure) {
+    console.log('il est ' + heure)
+}
+
+function printUser(name) {
+    console.log('je suis ' + name);
+}
